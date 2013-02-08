@@ -8,6 +8,10 @@
 */bin/*
 Run/
 
+#build stuff
+Applications/LuaRunner/luarunner
+Test/TestLuaInterface/testluainterface
+
 #ignore thumbnails created by windows
 Thumbs.db
 #Ignore files build by Visual Studio
