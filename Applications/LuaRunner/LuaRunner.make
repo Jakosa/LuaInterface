@@ -15,7 +15,11 @@ BUILD_DIR = ../../Run/Debug
 LUARUNNER_EXE_MDB_SOURCE=../../Run/Debug/LuaRunner.exe.mdb
 LUARUNNER_EXE_MDB=$(BUILD_DIR)/LuaRunner.exe.mdb
 LUAINTERFACE_DLL_SOURCE=../../Run/Debug/LuaInterface.dll
+LUAINTERFACE_DLL_MDB_SOURCE=../../Run/Debug/LuaInterface.dll.mdb
+LUAINTERFACE_DLL_MDB=$(BUILD_DIR)/LuaInterface.dll.mdb
 KOPILUA_DLL_SOURCE=../../Run/Debug/KopiLua.dll
+KOPILUA_DLL_MDB_SOURCE=../../Run/Debug/KopiLua.dll.mdb
+KOPILUA_DLL_MDB=$(BUILD_DIR)/KopiLua.dll.mdb
 
 endif
 
@@ -31,7 +35,9 @@ BUILD_DIR = ../../Run/Release
 
 LUARUNNER_EXE_MDB=
 LUAINTERFACE_DLL_SOURCE=../../Run/Release/LuaInterface.dll
+LUAINTERFACE_DLL_MDB=
 KOPILUA_DLL_SOURCE=../../Run/Release/KopiLua.dll
+KOPILUA_DLL_MDB=
 
 endif
 
@@ -48,7 +54,11 @@ BUILD_DIR = ../../Run/Debug_x64
 LUARUNNER_EXE_MDB_SOURCE=../../Run/Debug_x64/LuaRunner.exe.mdb
 LUARUNNER_EXE_MDB=$(BUILD_DIR)/LuaRunner.exe.mdb
 LUAINTERFACE_DLL_SOURCE=../../Run/Debug_x64/LuaInterface.dll
+LUAINTERFACE_DLL_MDB_SOURCE=../../Run/Debug_x64/LuaInterface.dll.mdb
+LUAINTERFACE_DLL_MDB=$(BUILD_DIR)/LuaInterface.dll.mdb
 KOPILUA_DLL_SOURCE=../../Run/Debug_x64/KopiLua.dll
+KOPILUA_DLL_MDB_SOURCE=../../Run/Debug_x64/KopiLua.dll.mdb
+KOPILUA_DLL_MDB=$(BUILD_DIR)/KopiLua.dll.mdb
 
 endif
 
@@ -64,7 +74,9 @@ BUILD_DIR = ../../Run/Release_x64
 
 LUARUNNER_EXE_MDB=
 LUAINTERFACE_DLL_SOURCE=../../Run/Release_x64/LuaInterface.dll
+LUAINTERFACE_DLL_MDB=
 KOPILUA_DLL_SOURCE=../../Run/Release_x64/KopiLua.dll
+KOPILUA_DLL_MDB=
 
 endif
 
@@ -74,7 +86,9 @@ SATELLITE_ASSEMBLY_NAME=$(notdir $(basename $(ASSEMBLY))).resources.dll
 PROGRAMFILES = \
 	$(LUARUNNER_EXE_MDB) \
 	$(LUAINTERFACE_DLL) \
-	$(KOPILUA_DLL)  
+	$(LUAINTERFACE_DLL_MDB) \
+	$(KOPILUA_DLL) \
+	$(KOPILUA_DLL_MDB)  
 
 BINARIES = \
 	$(LUARUNNER)  

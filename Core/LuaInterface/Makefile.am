@@ -16,6 +16,8 @@ BUILD_DIR = ../../Run/Debug
 LUAINTERFACE_DLL_MDB_SOURCE=../../Run/Debug/LuaInterface.dll.mdb
 LUAINTERFACE_DLL_MDB=$(BUILD_DIR)/LuaInterface.dll.mdb
 KOPILUA_DLL_SOURCE=../../Run/Debug/KopiLua.dll
+KOPILUA_DLL_MDB_SOURCE=../../Run/Debug/KopiLua.dll.mdb
+KOPILUA_DLL_MDB=$(BUILD_DIR)/KopiLua.dll.mdb
 
 endif
 
@@ -31,6 +33,7 @@ BUILD_DIR = ../../Run/Release
 
 LUAINTERFACE_DLL_MDB=
 KOPILUA_DLL_SOURCE=../../Run/Release/KopiLua.dll
+KOPILUA_DLL_MDB=
 
 endif
 
@@ -47,6 +50,8 @@ BUILD_DIR = ../../Run/Debug_x64
 LUAINTERFACE_DLL_MDB_SOURCE=../../Run/Debug_x64/LuaInterface.dll.mdb
 LUAINTERFACE_DLL_MDB=$(BUILD_DIR)/LuaInterface.dll.mdb
 KOPILUA_DLL_SOURCE=../../Run/Debug_x64/KopiLua.dll
+KOPILUA_DLL_MDB_SOURCE=../../Run/Debug_x64/KopiLua.dll.mdb
+KOPILUA_DLL_MDB=$(BUILD_DIR)/KopiLua.dll.mdb
 
 endif
 
@@ -62,6 +67,7 @@ BUILD_DIR = ../../Run/Release_x64
 
 LUAINTERFACE_DLL_MDB=
 KOPILUA_DLL_SOURCE=../../Run/Release_x64/KopiLua.dll
+KOPILUA_DLL_MDB=
 
 endif
 
@@ -70,7 +76,8 @@ SATELLITE_ASSEMBLY_NAME=$(notdir $(basename $(ASSEMBLY))).resources.dll
 
 PROGRAMFILES = \
 	$(LUAINTERFACE_DLL_MDB) \
-	$(KOPILUA_DLL)  
+	$(KOPILUA_DLL) \
+	$(KOPILUA_DLL_MDB)  
 
 LINUX_PKGCONFIG = \
 	$(LUAINTERFACE_PC)  
@@ -138,7 +145,8 @@ EXTRAS = \
 REFERENCES =  \
 	System \
 	System.Data \
-	System.Xml
+	System.Xml \
+	System.Core
 
 DLL_REFERENCES = 
 
