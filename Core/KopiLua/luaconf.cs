@@ -581,7 +581,7 @@ namespace KopiLua
 		/*
 		@@ The luai_num* macros define the primitive operations over numbers.
 		*/
-		//#if LUA_CORE
+		#if LUA_CORE
 		//#include <math.h>
 		public delegate lua_Number op_delegate(lua_Number a, lua_Number b);
 		public static lua_Number luai_numadd(lua_Number a, lua_Number b) { return ((a) + (b)); }
@@ -595,7 +595,7 @@ namespace KopiLua
 		public static bool luai_numlt(lua_Number a, lua_Number b) { return ((a) < (b)); }
 		public static bool luai_numle(lua_Number a, lua_Number b) { return ((a) <= (b)); }
 		public static bool luai_numisnan(lua_Number a) { return lua_Number.IsNaN(a); }
-		//#endif
+		#endif
 
 
 		/*
