@@ -68,7 +68,7 @@ sometimes Lua would loose track of pointers to CLR functions.
 
 When I added support for static methods, I allowed the user to use either a 
 colon or a dot to separate the method from the class name.  This was not 
-correct - it broke disambiguation between overloaded static methods.  
+correct - it broke disambiguation between overloaded static methods. 
 Therefore, LuaInterface is now more strict: If you want to call a static 
 method, you must use dot to separate the method name from the class name.  Of
 course you can still use a colon if an _instance_ is being used.
