@@ -1,0 +1,17 @@
+#
+# LuaInterface Hook
+#
+
+# Travis language: c(sharp)
+language: c
+
+# Mono
+install:
+  - sudo apt-get install mono-devel mono-dmcs
+
+script:
+  - ./build.sh release
+
+# Notify if needed
+notifications:
+  irc: "irc.rizon.net#schumix"
