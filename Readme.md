@@ -1,4 +1,4 @@
-LuaInterface 2.0.4
+LuaInterface 2.0.4 [![Build Status](https://travis-ci.org/megax/LuaInterface.png?branch=master)](https://travis-ci.org/megax/LuaInterface)
 ------------------
 
 Copyright © 2003-2006 Fabio Mascarenhas de Queiroz
