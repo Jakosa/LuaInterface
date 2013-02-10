@@ -7,11 +7,18 @@ language: c
 
 # Mono
 install:
-  - sudo apt-get install mono-devel mono-dmcs
+ - sudo apt-get install mono-devel mono-dmcs
 
 script:
-  - ./build.sh release
+ - ./build.sh release
+
+# Only watch the master branch
+branches:
+  only:
+    - master
 
 # Notify if needed
 notifications:
-  irc: "irc.rizon.net#schumix"
+  irc:
+    channels:
+      - "irc.rizon.net#hun_bot"
