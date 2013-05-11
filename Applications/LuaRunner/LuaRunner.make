@@ -2,7 +2,7 @@
 
 # Warning: This is an automatically generated file, do not edit!
 
-if ENABLE_DEBUG_X86
+if ENABLE_DEBUG
 ASSEMBLY_COMPILER_COMMAND = dmcs
 ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize- -debug "-define:DEBUG"
 ASSEMBLY = ../../Run/Debug/LuaRunner.exe
@@ -23,7 +23,7 @@ KOPILUA_DLL_MDB=$(BUILD_DIR)/KopiLua.dll.mdb
 
 endif
 
-if ENABLE_RELEASE_X86
+if ENABLE_RELEASE
 ASSEMBLY_COMPILER_COMMAND = dmcs
 ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize+ "-define:RELEASE"
 ASSEMBLY = ../../Run/Release/LuaRunner.exe
@@ -37,45 +37,6 @@ LUARUNNER_EXE_MDB=
 LUAINTERFACE_DLL_SOURCE=../../Run/Release/LuaInterface.dll
 LUAINTERFACE_DLL_MDB=
 KOPILUA_DLL_SOURCE=../../Run/Release/KopiLua.dll
-KOPILUA_DLL_MDB=
-
-endif
-
-if ENABLE_DEBUG_X64
-ASSEMBLY_COMPILER_COMMAND = dmcs
-ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize- -debug "-define:DEBUG"
-ASSEMBLY = ../../Run/Debug_x64/LuaRunner.exe
-ASSEMBLY_MDB = $(ASSEMBLY).mdb
-COMPILE_TARGET = exe
-PROJECT_REFERENCES =  \
-	../../Run/Debug_x64/LuaInterface.dll
-BUILD_DIR = ../../Run/Debug_x64
-
-LUARUNNER_EXE_MDB_SOURCE=../../Run/Debug_x64/LuaRunner.exe.mdb
-LUARUNNER_EXE_MDB=$(BUILD_DIR)/LuaRunner.exe.mdb
-LUAINTERFACE_DLL_SOURCE=../../Run/Debug_x64/LuaInterface.dll
-LUAINTERFACE_DLL_MDB_SOURCE=../../Run/Debug_x64/LuaInterface.dll.mdb
-LUAINTERFACE_DLL_MDB=$(BUILD_DIR)/LuaInterface.dll.mdb
-KOPILUA_DLL_SOURCE=../../Run/Debug_x64/KopiLua.dll
-KOPILUA_DLL_MDB_SOURCE=../../Run/Debug_x64/KopiLua.dll.mdb
-KOPILUA_DLL_MDB=$(BUILD_DIR)/KopiLua.dll.mdb
-
-endif
-
-if ENABLE_RELEASE_X64
-ASSEMBLY_COMPILER_COMMAND = dmcs
-ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize+ "-define:RELEASE"
-ASSEMBLY = ../../Run/Release_x64/LuaRunner.exe
-ASSEMBLY_MDB = 
-COMPILE_TARGET = exe
-PROJECT_REFERENCES =  \
-	../../Run/Release_x64/LuaInterface.dll
-BUILD_DIR = ../../Run/Release_x64
-
-LUARUNNER_EXE_MDB=
-LUAINTERFACE_DLL_SOURCE=../../Run/Release_x64/LuaInterface.dll
-LUAINTERFACE_DLL_MDB=
-KOPILUA_DLL_SOURCE=../../Run/Release_x64/KopiLua.dll
 KOPILUA_DLL_MDB=
 
 endif
