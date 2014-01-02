@@ -1,4 +1,4 @@
-LuaInterface 2.0.4 [![Build Status](https://travis-ci.org/megax/LuaInterface.png?branch=master)](https://travis-ci.org/megax/LuaInterface)
+LuaInterface 2.0.4 [![Build Status](https://travis-ci.org/megax/LuaInterface.png?branch=master)](https://travis-ci.org/megax/LuaInterface) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/megax/luainterface/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 ------------------
 
 Copyright © 2003-2006 Fabio Mascarenhas de Queiroz
