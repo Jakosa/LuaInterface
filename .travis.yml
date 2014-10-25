@@ -21,4 +21,4 @@ branches:
 notifications:
   irc:
     channels:
-      - "irc.rizon.net#schumix2"
+      - "irc.yeahunter.hu#dev"
