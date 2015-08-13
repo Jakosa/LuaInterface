@@ -22,4 +22,4 @@ branches:
 notifications:
   irc:
     channels:
-      - "flame.yeahunter.hu#dev"
+      - "irc.rizon.net#schumix2"
