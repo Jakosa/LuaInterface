@@ -7,7 +7,8 @@ language: c
 
 # Mono
 install:
- - sudo apt-get install mono-devel mono-dmcs
+ - sudo apt-get update -qq > /dev/null
+ - sudo apt-get install mono-devel mono-dmcs > /dev/null
 
 script:
  - ./build.sh release
