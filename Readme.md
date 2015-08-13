@@ -1,11 +1,11 @@
-LuaInterface 2.0.4 [![Build Status](https://travis-ci.org/Jakosa/LuaInterface.png?branch=master)](https://travis-ci.org/Jakosa/LuaInterface) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Jakosa/luainterface/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+LuaInterface 2.0.4 [![Build Status](https://travis-ci.org/Jakosa/LuaInterface.svg?branch=master)](https://travis-ci.org/Jakosa/LuaInterface) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Jakosa/luainterface/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 ------------------
 
-Copyright © 2003-2006 Fabio Mascarenhas de Queiroz
+Copyright Â© 2003-2006 Fabio Mascarenhas de Queiroz
 
 Maintainer: Craig Presti, craig@vastpark.com
 
-lua51.dll and lua51.exe are Copyright © 2005 Tecgraf, PUC-Rio
+lua51.dll and lua51.exe are Copyright Â© 2005 Tecgraf, PUC-Rio
 
 
 Getting started with LuaInterface:
@@ -90,7 +90,7 @@ Fixed a bug where calls of some static methods would reference an
 invalid pointer.
 
 Fixed a bug when strings with embedded null characters are passed in or 
-out of Lua (Thanks to Daniel Néri for the report & fix!)
+out of Lua (Thanks to Daniel NÃ©ri for the report & fix!)
  
 The native components in LuaInterface (i.e. Lua51 and the loader) are 
 both built as release builds - to prevent problems loading standard 
