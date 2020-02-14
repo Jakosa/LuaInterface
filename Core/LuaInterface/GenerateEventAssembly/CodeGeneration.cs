@@ -65,8 +65,8 @@ namespace LuaInterface
 			assemblyName = new AssemblyName();
 			assemblyName.Name = "LuaInterface_generatedcode";
 			// Create a new assembly with one module.
-			newAssembly = Thread.GetDomain().DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.Run);
-			newModule = newAssembly.DefineDynamicModule("LuaInterface_generatedcode");
+			newAssembly = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.Run);
+            newModule = newAssembly.DefineDynamicModule("LuaInterface_generatedcode");
 		}
 
 		/*
@@ -110,7 +110,7 @@ namespace LuaInterface
 			// returns
 			generator.Emit(OpCodes.Ret);
 			// creates the new type
-			return myType.CreateType();
+			return myType.CreateTypeInfo().AsType();
 		}
 
 		/*
@@ -287,7 +287,7 @@ namespace LuaInterface
 				generator.Emit(OpCodes.Ldloc_3);
 
 			generator.Emit(OpCodes.Ret);
-			return myType.CreateType(); // creates the new type
+			return myType.CreateTypeInfo().AsType(); // creates the new type
 		}
 
 		/*
@@ -363,7 +363,7 @@ namespace LuaInterface
 			generator = returnTableMethod.GetILGenerator();
 			generator.Emit(OpCodes.Ldfld, luaTableField);
 			generator.Emit(OpCodes.Ret);
-			newType = myType.CreateType(); // Creates the type
+			newType = myType.CreateTypeInfo().AsType(); // Creates the type
 		}
 
 		/*
